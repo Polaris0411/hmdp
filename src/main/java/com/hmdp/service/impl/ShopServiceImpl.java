@@ -111,7 +111,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
                 return queryWithMutex(id);
             }
             // 4.4成功，根据id查询数据库
-            shop = getById(id)
+            shop = getById(id);
             // 模拟重建延时
             Thread.sleep(200);
             // 5.不存在，返回错误
